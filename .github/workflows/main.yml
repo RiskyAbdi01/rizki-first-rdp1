@@ -19,20 +19,20 @@ jobs:
     - name: Download Launcher
       run: |
 
-        Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+
         Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/launcher/Growtopia.lnk -OutFile Growtopia.lnk
         Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/launcher/teohook.dll -OutFile teohook.dll
-        Invoke-WebRequest https://cdn.discordapp.com/attachments/705906948922540044/878683182034190346/Growtopia.zip -OutFile Growtopia.zip
+
         Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/ProcessHacker.zip -OutFile ProcessHacker.zip
         Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/launcher/fixed_Inject_Teohook -OutFile Inject_Teohook.bat
         md C:\Users\administrator\Growtopia
         copy Growtopia.zip C:\Users\administrator\Growtopia\Growtopia.zip
         Expand-Archive -LiteralPath 'C:\Users\administrator\Growtopia\Growtopia.zip' -DestinationPath C:\Users\administrator\Growtopia
         Remove-Item "C:\Users\administrator\Growtopia\Growtopia.zip"
-        md C:\Users\administrator\ProcessHacker
-        copy ProcessHacker.zip C:\Users\administrator\ProcessHacker\ProcessHacker.zip
-        Expand-Archive -LiteralPath 'C:\Users\administrator\ProcessHacker\ProcessHacker.zip' -DestinationPath C:\Users\administrator\ProcessHacker
-        Remove-Item "C:\Users\administrator\ProcessHacker\ProcessHacker.zip"
+
+
+
+
     - name: Extracting Ngrok Files
       run: Expand-Archive ngrok.zip
     - name: Connect To Ngrok Account
@@ -46,7 +46,7 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
         copy wallpaper.png D:\a\wallpaper.png
         copy wallpaper.bat D:\a\wallpaper.bat
-        copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
+
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
         copy Growtopia.lnk C:\Users\Public\Desktop\Growtopia.lnk
         copy teohook.dll C:\Users\Public\Desktop\teohook.dll
