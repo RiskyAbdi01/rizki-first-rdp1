@@ -18,7 +18,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/loop.bat -OutFile loop.bat
     - name: Download Launcher
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/launcher/Node.js.lnk -OutFile Node.js.lnk
+
         Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
         Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/launcher/Growtopia.lnk -OutFile Growtopia.lnk
         Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/launcher/teohook.dll -OutFile teohook.dll
