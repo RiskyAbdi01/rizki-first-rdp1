@@ -32,7 +32,7 @@ jobs:
         md C:\Users\administrator\ProcessHacker
         copy ProcessHacker.zip C:\Users\administrator\ProcessHacker\ProcessHacker.zip
         Expand-Archive -LiteralPath 'C:\Users\administrator\ProcessHacker\ProcessHacker.zip' -DestinationPath C:\Users\administrator\ProcessHacker
-        Remove-Item "C:\Users\administrator\ProcessHacker\ProcessHacker.zip"
+
     - name: Extracting Ngrok Files
       run: Expand-Archive ngrok.zip
     - name: Connect To Ngrok Account
