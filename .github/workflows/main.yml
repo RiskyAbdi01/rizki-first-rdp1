@@ -16,17 +16,10 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/wallpaper.bat -OutFile wallpaper.bat
   
-    - name: Download Launcher
-      run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/launcher/Growtopia.lnk -OutFile Growtopia.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/launcher/teohook.dll -OutFile teohook.dll
 
 
-        Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/launcher/fixed_Inject_Teohook -OutFile Inject_Teohook.bat
-        md C:\Users\administrator\Growtopia
-        copy Growtopia.zip C:\Users\administrator\Growtopia\Growtopia.zip
-        Expand-Archive -LiteralPath 'C:\Users\administrator\Growtopia\Growtopia.zip' -DestinationPath C:\Users\administrator\Growtopia
-        Remove-Item "C:\Users\administrator\Growtopia\Growtopia.zip"
+
+
 
 
 
